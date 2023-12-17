@@ -1,4 +1,4 @@
-﻿namespace siteValorium.Pages
+﻿namespace siteValorium.Shared
 {
     public partial class LayoutPrincipal
     {

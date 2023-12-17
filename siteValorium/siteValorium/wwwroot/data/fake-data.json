@@ -1,0 +1,15 @@
+﻿[
+  {
+    "Titre": "Titre de l'article 1",
+    "Description": "Description de l'article 1"
+  },
+  {
+    "Titre": "Titre de l'article 2",
+    "Description": "Description de l'article 2"
+  },
+  {
+    "Titre": "Titre de l'article 3",
+    "Description": "Description de l'article 3"
+  }
+  // Ajoute autant d'articles que nécessaire
+]
