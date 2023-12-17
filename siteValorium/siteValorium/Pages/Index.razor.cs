@@ -2,6 +2,7 @@
 
 using siteValorium.Models;
 using System.Text.Json;
+using Microsoft.AspNetCore.Components;
 
 namespace siteValorium.Pages
 {
@@ -9,15 +10,21 @@ namespace siteValorium.Pages
     {
         public List<Article> lArticles;
 
+        [Inject]
+        public HttpClient Http { get; set; }
+
+        [Inject]
+        public NavigationManager NavigationManager { get; set; }
+
         public Index()
         {
             IDataArticleManager manager = new StubArticles();
-            this.lArticles = manager.getAllArticles();
+            //this.lArticles = manager.getAllArticles();
+        }
 
-            String jsonString = JsonSerializer.Serialize(this.lArticles);
-            String filePath = Path.Combine("wwwroot", "data", "my-data.json");
-
-            File.WriteAllTextAsync(filePath, jsonString);
+        protected override async Task OnInitializedAsync()
+        {
+            this.lArticles = await Http.GetFromJsonAsync<List<Article>>($"{NavigationManager.BaseUri}data/fake-data.json");
         }
     }
 }
