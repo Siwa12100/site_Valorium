@@ -1,6 +1,6 @@
 ﻿namespace siteValorium.Models.Article
 {
-    public class StubArticles : IDataArticleManager
+    public class StubArticles : IDataArticlesManager
     {
         public List<Article> getAllArticles()
         {

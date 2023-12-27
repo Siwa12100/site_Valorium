@@ -18,7 +18,7 @@ namespace siteValorium.Pages
 
         public Index()
         {
-            IDataArticleManager manager = new StubArticles();
+            IDataArticlesManager manager = new StubArticles();
             //this.lArticles = manager.getAllArticles();
         }
 

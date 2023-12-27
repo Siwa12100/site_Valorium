@@ -1,6 +1,6 @@
 ﻿namespace siteValorium.Models.Article
 {
-    public interface IDataArticleManager
+    public interface IDataArticlesManager
     {
         List<Article> getAllArticles();
     }
