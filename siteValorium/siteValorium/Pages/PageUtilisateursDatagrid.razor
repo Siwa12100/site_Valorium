@@ -1,0 +1,21 @@
+﻿@page "/utilisateurs2"
+@using siteValorium.Models.utilisateurs;
+@layout MainLayout
+<h3>PageUtilisateursDatagrid</h3>
+
+<DataGrid TItem="Utilisateur"
+		  Data="@utilisateursAffiches"
+		  ReadData="@OnReadData"
+		  TotalItems="@totalUtilisateurs"
+		  PageSize="3"
+		  ShowPager
+		  Responsive>
+
+	<DataGridColumn TItem="Utilisateur" Field="@nameof(Utilisateur.Id)" Caption="Identifiant"/>
+	<DataGridColumn TItem="Utilisateur" Field="@nameof(Utilisateur.Nom)" Caption="Nom" />
+	<DataGridColumn TItem="Utilisateur" Field="@nameof(Utilisateur.Description)" Caption="Description" />
+	@* <DataGridColumn TItem="Utilisateur" Field="@nameof(Utilisateur.Id)" Caption="Identifiant" /> *@
+	
+</DataGrid>
+
+

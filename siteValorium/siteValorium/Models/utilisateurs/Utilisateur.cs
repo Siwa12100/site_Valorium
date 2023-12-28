@@ -2,10 +2,10 @@
 {
     public class Utilisateur
     {
-        protected int Id { get; set; }
-        protected string Nom { get; set; }
-        protected string Description { get; set; }
-        protected DateTime DateCreation { get; set; }
+        public int Id { get; set; }
+        public string Nom { get; set; }
+        public string Description { get; set; }
+        public DateTime DateCreation { get; set; }
 
         public Utilisateur (int id, string nom, string description)
         {

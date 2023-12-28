@@ -1,9 +1,9 @@
 ﻿namespace siteValorium.Models.utilisateurs
 {
-    public class stubUtilisateurs : IDataUtilisateursManager
+    public class StubUtilisateurs : IDataUtilisateursManager
     {
         protected List<Utilisateur> utilisateurs;
-        public stubUtilisateurs()
+        public StubUtilisateurs()
         {
             this.utilisateurs = new List<Utilisateur> ();
             this.chargerUtilisateurs();
