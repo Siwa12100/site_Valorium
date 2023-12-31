@@ -6,9 +6,6 @@
 <DataGrid TItem="Utilisateur"
 		  Data="@utilisateursAffiches"
 		  ReadData="@OnReadData"
-		  TotalItems="@totalUtilisateurs"
-		  PageSize="5"
-		  ShowPager
 		  Responsive>
 
 	<DataGridColumn TItem="Utilisateur" Field="@nameof(Utilisateur.Id)" Caption="Identifiant"/>

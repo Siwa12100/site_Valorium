@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
+using Blazored.LocalStorage;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddServerSideBlazor();
 // Activation du client Http : 
 builder.Services.AddHttpClient();
 
+// Ajout de Blazorise
 builder.Services
     .AddBlazorise(options =>
     {
@@ -20,6 +22,9 @@ builder.Services
     })
     .AddBootstrapProviders()
     .AddFontAwesomeIcons();
+
+// Ajout de Blazored
+builder.Services.AddBlazoredLocalStorage();
 
 var app = builder.Build();
 

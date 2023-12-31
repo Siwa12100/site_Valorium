@@ -1,33 +1,40 @@
 ﻿namespace siteValorium.Pages
 {
-	using Blazorise.DataGrid;
-	using siteValorium.Models.utilisateurs;
-	using System;
+    using Blazorise.DataGrid;
+	using Blazored.LocalStorage;
+    using siteValorium.Models.utilisateurs;
+    using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Components;
 
-	public partial class PageUtilisateursDatagrid
+    public partial class PageUtilisateursDatagrid
 	{
 		private List<Utilisateur> allUtilisateurs;
 		private List<Utilisateur> utilisateursAffiches;
 		private int totalUtilisateurs;
 
-		protected override void OnInitialized()
-		{
-			// Initialisez vos données ici au lieu de le faire dans le constructeur
-			StubUtilisateurs stub = new StubUtilisateurs();
-			this.allUtilisateurs = stub.getAllUtilisateurs();
+        [Inject]
+        public ILocalStorageService LocalStorage { get; set; }
 
-			// Assurez-vous de faire appel à la méthode de la classe de base
-			base.OnInitialized();
-		}
+        [Inject]
+        public HttpClient Http { get; set; }
 
-		private async Task OnReadData(DataGridReadDataEventArgs<Utilisateur> e)
+        [Inject]
+        public NavigationManager NavigationManager { get; set; }
+
+        protected override async Task OnInitializedAsync()
+        {
+            Utilisateur[] tab = await Http.GetFromJsonAsync<Utilisateur[]>($"{NavigationManager.BaseUri}utilisateursFake.json)");
+            this.allUtilisateurs = tab.ToList();
+        }
+
+        private async Task OnReadData(DataGridReadDataEventArgs<Utilisateur> e)
 		{
-			// Utilisez les données déjà chargées, évitez de créer une nouvelle instance de StubUtilisateurs
-			// Vous pouvez également ajouter un mécanisme de mise en cache pour éviter de charger les données à chaque fois
-			this.utilisateursAffiches = this.allUtilisateurs.Skip((e.Page - 1) * e.PageSize).Take(e.PageSize).ToList();
+            StubUtilisateurs stub = new StubUtilisateurs();
+            //this.utilisateursAffiches = stub.getAllUtilisateurs();
+            this.utilisateursAffiches = this.allUtilisateurs;
 		}
 	}
 }
