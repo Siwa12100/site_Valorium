@@ -1,0 +1,50 @@
+﻿body {
+    background-color: #0D1117;
+    margin-left: 20px;
+    margin-right : 20px;
+}
+
+/* Style de la section intro */
+.intro {
+    display: flex; /* Utilise un modèle de boîte flexible pour afficher les div côte à côte */
+    justify-content: center; /* Centre les div horizontalement dans la section */
+    
+    /*border: 2px solid green;*/
+
+    margin-top : 30px;
+    margin-bottom : 30px;
+}
+
+/* Style de la div introTexte */
+.introTexte {
+    /*border: 2px solid red*/;
+    color: white;
+    padding: 10px; /* Ajoute un espace intérieur pour mieux voir la bordure */
+
+    width: 40%;
+    Font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    
+    font-size : 21px;
+}
+
+    .introTexte h2 {
+        font-size: 60px;
+
+        font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    }
+
+/* Style de la div introImage */
+.introImage {
+    width: 64%; /* Prend 60% de la largeur de la section */
+    margin-right: 20px; /* Marge à droite de introImage */
+}
+
+/* Espace entre introTexte et introImage */
+.spaceBetween {
+    flex: 1; /* Utilise le reste de l'espace disponible */
+}
+
+/* Ajuste l'espace sur les côtés extérieurs */
+.outerSpace {
+    flex: 1; /* Utilise le reste de l'espace disponible */
+}

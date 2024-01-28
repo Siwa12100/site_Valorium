@@ -1,0 +1,10 @@
+﻿.image {
+    overflow: hidden; /* Masque le contenu dépassant de la boîte */
+    border-radius: 40px; /* Bords arrondis */
+}
+
+.image img {
+    width: 100%; /* Assure que l'image occupe 100% de la largeur du conteneur */
+    height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions de l'image */
+    display: block; /* Supprime les marges par défaut ajoutées par les images en tant qu'éléments en ligne */
+}
