@@ -1,16 +1,76 @@
 ﻿@page "/"
 
-@using siteValorium.composants.composantTest
 @using siteValorium.composants.navbar
 @using siteValorium.composants.hautDePage
+@using siteValorium.composants.blocImageTexteV1
+@using siteValorium.composants.carteOpaque
 
 <div class="contenuPage">
 
     <Navbar />
 
-    <div class="HautDePage">
-        <HautDePage />
+    <div class="blocContenu1">
+
+        <div class="HautDePage">
+            <HautDePage />
+        </div>
+
+        <BlocImageTexteV1 cheminImage="https://elendilmc.fr/wp-content/uploads/2023/04/lab-1536x864.png"
+                          titre="Introduction"
+                          texte="@texteVision" />
+
+
+        <div class="grandTitre">
+
+            <h2>Actualités</h2>
+
+        </div>
+
+        <div class="degrade1">
+
+
+
+            <CarteOpaque titre="Première grande assemblée"
+                         contenu="D'ici quelques semaines, se rassembleront autour d'une même table de premiers acteurs influents dans la communauté francophone, pour discuter d'un avenir commun ainsi que du début d'une collaboration active autour de projets prometteurs." />
+
+            <CarteOpaque titre="Sortie du Discord officiel"
+                         contenu="Après plusieurs mois de réflexion et de préparation, ce n'est plus qu'une question de jours avant que le discord officiel du Valorium, point central et fédérateur de notre communauté, n'ouvre au public !" />
+
+            <CarteOpaque titre="Développement du site"
+                         contenu="Toujours en cours de développement, la version finale du site viendra replacer l'actuelle au cours du Printemps à venir." />
+
+        </div>
+
+
+                          
+
+    </div>
+
+    
+
+
+    <div class="finDePage">
+
+
     </div>
 
 </div>
 
+
+
+
+@code {
+    private MarkupString texteVision = new MarkupString(
+    "Le cœur nos travaux consiste en la création d'échange et de collaboration entre des acteurs du Minecraft francophone. Nous oeuvrons ainsi à : " +
+
+        "<br /><br />" +
+
+        "- Favoriser le partage d'expérience et de ressources entre acteurs, dans l'optique de perdurer et de se développer durablement dans le temps.<br /><br />" +
+
+        "- Créer un support autour de la collaboration entre différents acteurs pour monter des projets techniques et communautaires conséquents.<br /><br />" +
+
+        "- inscrire nos communautés et serveurs dans une vision d'univers virtuel, prémisses des lointains métavers."
+    );
+
+    //private MarkupString textetestCarte = new MarkupString("Le cœur nos travaux consiste en la création d'échange et de collaboration entre des acteurs du Minecraft francophone. Nous oeuvrons ainsi à : " );
+}
