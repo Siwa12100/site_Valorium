@@ -1,4 +1,21 @@
-﻿h1 {
+﻿.contenuPage {
+
+    border : 5px orange solid;
+
+}
+
+h1 {
     font-family: Arial;
     color: white;
+}
+
+.HautDePage {
+
+    border : red solid 4px;
+
+    width : 90%;
+
+    margin-top : 5vh;
+    margin-left : 5%;
+    margin-right : 5%;
 }

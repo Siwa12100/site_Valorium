@@ -1,4 +1,5 @@
 ﻿.navbar {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,24 +51,15 @@ img {
     height: 50%;
     width: 8%;
     font-size: 2vh;
-
     border : none;
     color : white;
-
     background: rgb(33,190,215);
-
     background: linear-gradient(266deg, rgba(33,190,215,1) 0%, rgba(55,72,179,1) 87%);
-
     border-radius: 45px;
-
     cursor: pointer;
-
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
     transition: opacity 0.3s, box-shadow 0.3s;
-
     outline: none;
-
     font-family: Arial, sans-serif;
 }
 
