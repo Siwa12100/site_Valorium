@@ -1,0 +1,81 @@
+﻿.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #121212;
+    /*    background-color: #010409;*/
+    padding: 10px 20px;
+    height: 9vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),/ 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial;
+}
+
+.logo {
+
+    height : 100%;
+}
+
+img {
+
+    height : 100%;
+    width : 100%;
+}
+
+.navigation {
+
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+    align-items : center;
+    height : 80%;
+    width : 33%;
+}
+
+.navigation a {
+
+    color: white;
+    font-size : 150%;
+    text-decoration: none;
+    font-family : Arial;
+}
+
+.navbar .navigation a:hover {
+    text-decoration: underline;
+}
+
+.gradient-button {
+    font-weight: bold;
+    font-family: Arial;
+    padding: 10px 25px;
+    height: 50%;
+    width: 8%;
+    font-size: 2vh;
+
+    border : none;
+    color : white;
+
+    background: rgb(33,190,215);
+
+    background: linear-gradient(266deg, rgba(33,190,215,1) 0%, rgba(55,72,179,1) 87%);
+
+    border-radius: 45px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    transition: opacity 0.3s, box-shadow 0.3s;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+}
+
+.gradient-button:hover {
+    opacity: 0.9;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
