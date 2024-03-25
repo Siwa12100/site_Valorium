@@ -52,22 +52,33 @@ img {
 }
 
 .gradient-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacement entre l'image et le texte */
     font-weight: bold;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     padding: 10px 25px;
-    height: 50%;
-    width: 8%;
-    font-size: 2vh;
-    border : none;
-    color : white;
-    background: rgb(33,190,215);
-    background: linear-gradient(266deg, rgba(33,190,215,1) 0%, rgba(55,72,179,1) 87%);
+    font-size: 1rem; /* Taille de police relative */
+    border: none;
+    color: white;
+    /* background: linear-gradient(266deg, rgba(33,190,215,1) 0%, rgba(55,72,179,1) 87%);*/
+
+    background: rgb(2,92,170);
+    background: linear-gradient(87deg, rgba(2,92,170,1) 25%, rgba(34,43,145,1) 89%);
+    
     border-radius: 45px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s, box-shadow 0.3s;
     outline: none;
-    font-family: Arial, sans-serif;
+    width: auto; /* Laissez le bouton s'ajuster au contenu */
+    height: auto; /* Laissez la hauteur s'ajuster au contenu */
+}
+
+.button-icon {
+    height: 1em; /* S'adapte à la taille de la police du bouton */
+    width: auto; /* Gardez l'aspect ratio de l'image */
 }
 
 .gradient-button:hover {
