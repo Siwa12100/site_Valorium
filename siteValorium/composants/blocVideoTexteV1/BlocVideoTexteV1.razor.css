@@ -1,0 +1,36 @@
+﻿.conteneur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Candara;
+    color: white;
+}
+
+h2 {
+    font-size: 5vh;
+}
+
+.section-texte, .section-media {
+    width: 50%;
+    padding: 0 2%;
+}
+
+    .section-texte h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .section-texte p {
+        font-size: 2.5vh;
+    }
+
+    .section-media iframe {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        width: 100%; /* Cela peut varier en fonction de vos besoins */
+        height: auto; /* Cela peut varier en fonction de vos besoins */
+        border-radius: 20px;
+    }
+
+/* Ajustement pour l'ordre d'affichage */
+.section-media {
+    order: -1; /* Place la section media en premier */
+}
