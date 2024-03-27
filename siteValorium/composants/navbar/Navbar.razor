@@ -1,13 +1,18 @@
 ﻿<nav class="navbar">
     <div class="logo">
-        <img src="/images/logoValorium.webp" alt="Logo">
+        <img src="/images/logoValorium.webp" alt="Logo" @onclick="redirectionAccueil">
     </div>
+    
+
     <div class="navigation">
-        <a class="nav-effect" href="/">A propos</a>
-        <a class="nav-effect" href="/">Actualités</a>
-        <a class="nav-effect" href="/serveurs">Emrub</a>
+        <a class="nav-effect" href="#presentation">A propos</a>
+        <a class="nav-effect" href="#actualites">Actualités</a>
+        <a class="nav-effect" href="#emrub">Emrub</a>
+
     </div>
-    <button class="gradient-button" @ref="elementRef">
+
+
+    <button class="gradient-button" @ref="elementRef" @onclick="redirectionValorium">
         <img src="/images/discord-white-icon.png" alt="logoDiscord" class="button-icon">
         Discord
     </button>

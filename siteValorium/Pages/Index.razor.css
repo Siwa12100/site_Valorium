@@ -47,7 +47,7 @@
     color: #446;
 }
 
-.degrade1 {
+/*.degrade1 {
 
     background-image: url('https://cdn.discordapp.com/attachments/881878050298552361/1061068235929292920/2023-01-07_00.46.14.png?ex=66108d4d&is=65fe184d&hm=b4c59e7a13b4de3c9833e1a65c4e6c551df5a4d37ccc1534af95b1f1ed13f3f5&');
     background-size: cover; 
@@ -56,20 +56,61 @@
     display : flex;
     flex-direction : row;
     justify-content : space-around;
-    align-items : center;
+    align-items : center;*/
 
 
 /*    margin-left: 5%;
     margin-right: 5%;*/
+    /*width: 100%;
+    height: 50vh;
+    border-radius: 30px;
+}*/
+
+.degrade1 {
+    background-image: url('https://cdn.discordapp.com/attachments/881878050298552361/1061068235929292920/2023-01-07_00.46.14.png?ex=66108d4d&is=65fe184d&hm=b4c59e7a13b4de3c9833e1a65c4e6c551df5a4d37ccc1534af95b1f1ed13f3f5&');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 50vh;
     border-radius: 30px;
+
+    
 }
 
-.blocContenu1 {
+/* Media query pour les écrans de moins de 1024 pixels */
+@media (max-width: 1024px) {
+    .degrade1 {
+        flex-direction: column; /* Change l'orientation pour empiler verticalement */
+        background-image: none; /* Masque l'image de fond */
+        padding: 20px 0; /* Ajoute un peu d'espace autour des cartes */
 
-    margin-left : 6%;
-    margin-right : 6%;
+    }
+
+    .ajustement1 {
+
+        height : 100vh;
+    }
+
+        .degrade1 .BlocVideo1 {
+            margin-bottom: 20px; /* Espacement entre les cartes */
+        }
+
+            /* Assurez-vous que la dernière carte n'ait pas de marge en bas */
+            .degrade1 .BlocVideo1:last-child {
+                margin-bottom: 0;
+            }
+}
+
+
+
+.blocContenu1 {
+    margin-left: 6%;
+    margin-right: 6%;
+
 }
 
 .finDePage {
@@ -79,9 +120,9 @@
 }
 
 .BlocVideo1 {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 
-    margin-top : 7vh;
-    margin-bottom : 7vh;
 }
 
 .grandTitre h2 {
