@@ -5,6 +5,7 @@
 @using siteValorium.composants.blocImageTexteV1
 @using siteValorium.composants.carteOpaque
 @using siteValorium.composants.blocVideoTexteV1
+@using siteValorium.composants.blocImageTexteV2
 
 <div class="contenuPage">
 
@@ -42,9 +43,21 @@
 
         </div>
 
-        <BlocVideoTexteV1 titre="Minecraft : Support de création "
-                          cheminVideo="https://www.youtube.com/embed/UtTOK15RBrk?si=1KyRJktM7nLUg4E9"
-                          texte="@texteVision" />
+
+        <div class="BlocVideo1">
+            <BlocVideoTexteV1 titre="Minecraft : Notre support de création "
+                              cheminVideo="https://www.youtube.com/embed/UtTOK15RBrk?si=1KyRJktM7nLUg4E9&autoplay=1&mute=1&loop=1&playlist=UtTOK15RBrk"
+                              texte="@texteVision" />
+        </div>
+
+        <div class="BlocVideo1">
+
+            <BlocImageTexteV1 cheminImage="https://elendilmc.fr/wp-content/uploads/2023/04/agora1.png"
+                              titre="Emrub : Notre univers en jeu"
+                              texte="@texteVision" />
+
+
+        </div>
 
 
                           

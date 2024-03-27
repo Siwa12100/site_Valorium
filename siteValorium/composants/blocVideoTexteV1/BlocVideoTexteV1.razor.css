@@ -4,6 +4,8 @@
     align-items: center;
     font-family: Candara;
     color: white;
+
+/*    border : 3px solid red;*/
 }
 
 h2 {
@@ -25,12 +27,23 @@ h2 {
 
     .section-media iframe {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+
         width: 100%; /* Cela peut varier en fonction de vos besoins */
-        height: auto; /* Cela peut varier en fonction de vos besoins */
-        border-radius: 20px;
+        height: 100%;
+
+
+        border-radius: 40px;
+
+        /*border : 3px orange solid;*/
     }
 
 /* Ajustement pour l'ordre d'affichage */
 .section-media {
-    order: -1; /* Place la section media en premier */
+
+    /*order: -1;*/ /* Place la section media en premier */
+
+    /*border : 3px solid green;*/
+
+    height : 45vh;
 }
