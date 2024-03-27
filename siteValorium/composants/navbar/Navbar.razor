@@ -1,20 +1,16 @@
 ﻿<nav class="navbar">
-
     <div class="logo">
         <img src="/images/logoValorium.webp" alt="Logo">
     </div>
-
     <div class="navigation">
-
-        <a href="/">Accueil</a>
-        <a href="/">Présentation</a>
-        <a href="/serveurs">Actualités</a>
-
-	</div><link href="c:\users\jeanm\onedrive\documents\dev\minecraft\site_valorium\sitevalorium\composants\navbar\navbar.razor.css" rel="stylesheet" />
-
-    <button class="gradient-button">
+        <a class="nav-effect" href="/">A propos</a>
+        <a class="nav-effect" href="/">Actualités</a>
+        <a class="nav-effect" href="/serveurs">Emrub</a>
+    </div>
+    <button class="gradient-button" @ref="elementRef">
         <img src="/images/discord-white-icon.png" alt="logoDiscord" class="button-icon">
         Discord
     </button>
-
 </nav>
+
+

@@ -5,7 +5,6 @@
 
 .bloc-principal {
     position: relative;
-    user-select: none;
     height: 70vh;
     width: 100%;
     display: flex;
@@ -16,8 +15,9 @@
 }
 
 .bloc-interne h1 {
-
-    font-size : 11vh;
+    font-size: 11vh;
+    font-family: Candara;
+    user-select: none;
 }
 
 .bloc-interne p {
@@ -26,24 +26,7 @@
     font-size: 3vh;
 }
 
-.button {
-    margin: 30px 0;
 
-    border: 3px solid #BFC3C4;
-
-    width: max-content;
-
-    padding: 10px 20px;
-    transition: 1s;
-
-    color : white;
-
-    font-weight : bold;
-
-    font-size : 2vh;
-
-    font-family : Arial;
-}
 
 
 .video-fond {
@@ -87,10 +70,10 @@ h1 {
 .texte-large {
     font-size: 1.7vw;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: Candara;
 }
 
-button {
+/*button {
     background-color: #0BDCF3;
     border-radius: 14px;
     padding: 1em 0;
@@ -102,6 +85,213 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
-    background-color: #09C2D3; 
+.button {
+    margin: 30px 0;
+    border: 3px solid #BFC3C4;
+    width: max-content;
+    padding: 10px 20px;
+    transition: 1s;
+    color: white;
+    font-weight: bold;
+    font-size: 2.4vh;
+    font-weight: bold;
+    font-family: Candara;
+}*/
+
+
+
+.button {
+    margin: 30px 0;
+    width: max-content;
+    padding: 10px 20px;
+    transition: 1s;
+    color: white;
+    font-weight: bold;
+    font-size: 2.4vh;
+    font-family: Candara;
+    position: relative;
+    cursor: pointer;
+    will-change: transform;
+    overflow: hidden; /* Pour contenir les pseudos-éléments */
 }
+
+
+    /* Styles for top and left borders */
+    .button::before,
+    .button::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        transition: all 250ms ease-in-out;
+        z-index: -1;
+    }
+
+    /* Top border */
+    .button::before {
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        transform: translateX(-50%);
+    }
+
+    /* Left border */
+    .button::after {
+        top: 50%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        transform: translateY(-50%);
+    }
+
+    /* Hover effects for top and left borders */
+    .button:hover::before {
+        left: -10px;
+        width: calc(100% + 20px); /* Extension to the left */
+    }
+
+    .button:hover::after {
+        top: -10px;
+        height: calc(100% + 20px); /* Extension upwards */
+    }
+
+    /* Styles for right and bottom borders using spans */
+
+    /* Right border */
+    .button span:first-child::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: 100%;
+        width: 2px;
+
+        transform: translateY(-50%);
+        background-color: white;
+        transition: all 250ms ease-in-out;
+    }
+
+    /* Bottom border */
+    .button span:last-child::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+
+        transform: translateX(-50%);
+        background-color: white;
+        transition: all 250ms ease-in-out;
+    }
+
+    .button:hover span:first-child::before {
+        right: -10px;
+        height: calc(100% + 20px); /* Extension to the right */
+    }
+
+    .button:hover span:last-child::after {
+        bottom: -10px;
+        width: calc(100% + 20px); /* Extension downwards */
+    }
+
+
+
+
+
+
+
+
+
+
+/*.button {
+    margin: 30px 0;
+    width: max-content;
+    padding: 10px 20px;
+    transition: 1s;
+    color: white;
+    font-weight: bold;
+    font-size: 2.4vh;
+    font-family: Candara;
+    position: relative;
+    cursor: pointer;
+    will-change: transform;
+    overflow: hidden;*/ /* Pour contenir les pseudos-éléments */
+/*}*/
+
+    /* Styles for top and left borders */
+    /*.button::before,
+    .button::after {
+        content: '';
+        position: absolute;
+        background-color: deeppink;
+        transition: all 250ms ease-in-out;
+        z-index: -1;
+    }*/
+
+    /* Top border */
+    /*.button::before {
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        transform: translateX(-50%);
+    }*/
+
+    /* Left border */
+    /*.button::after {
+        top: 50%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        transform: translateY(-50%);
+    }*/
+
+    /* Hover effects for top and left borders */
+    /*.button:hover::before {
+        left: -10px;
+        width: calc(100% + 20px);
+    }
+
+    .button:hover::after {
+        top: -10px;
+        height: calc(100% + 20px);
+    }*/
+
+    /* Styles for right and bottom borders using spans */
+    /* Right border */
+    /*.button span:first-child::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: 100%;
+        width: 2px;
+        transform: translateY(-50%);
+        background-color: deeppink;
+        transition: all 250ms ease-in-out;
+    }*/
+
+    /* Bottom border */
+    /*.button span:last-child::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        transform: translateX(-50%);
+        background-color: deeppink;
+        transition: all 250ms ease-in-out;
+    }*/
+
+    /* Hover effects for right and bottom borders */
+    /*.button:hover span:first-child::before {
+        right: -10px;
+        height: calc(100% + 20px);
+    }
+
+    .button:hover span:last-child::after {
+        bottom: -10px;
+        width: calc(100% + 20px);
+    }*/

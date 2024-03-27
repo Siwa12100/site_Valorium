@@ -3,7 +3,6 @@
     justify-content: space-around;
     align-items: center;
     background-color: #121212;
-
     /*    background-color: #010409;*/
     /*padding: 10px 20px;*/
 
@@ -11,10 +10,8 @@
     /*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5),/ 0 6px 20px rgba(0, 0, 0, 0.5);*/
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    font-family: Arial;
-
+    font-family: Candara;
     border-bottom: 0.1vh #1e2031;
-
     border-style: solid;
 }
 
@@ -39,16 +36,16 @@ img {
     width : 33%;
 }
 
-.navigation a {
-
-    color: white;
-    font-size : 126%;
-    text-decoration: none;
-    font-family : Arial;
-}
+    .navigation a {
+        color: white;
+        font-size: 126%;
+        text-decoration: none;
+        font-family: Candara;
+        font-weight : bold;
+    }
 
 .navbar .navigation a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .gradient-button {
@@ -57,16 +54,15 @@ img {
     justify-content: center;
     gap: 10px; /* Espacement entre l'image et le texte */
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-family: Candara;
     padding: 10px 25px;
-    font-size: 1rem; /* Taille de police relative */
+    font-size: 2.2vh; /* Taille de police relative */
     border: none;
     color: white;
     /* background: linear-gradient(266deg, rgba(33,190,215,1) 0%, rgba(55,72,179,1) 87%);*/
 
     background: rgb(2,92,170);
     background: linear-gradient(87deg, rgba(2,92,170,1) 25%, rgba(34,43,145,1) 89%);
-    
     border-radius: 45px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -89,3 +85,59 @@ img {
 .gradient-button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Votre CSS pour la barre de navigation existante */
+/* ... */
+
+/* Intégration de l'effet sur les éléments <a> */
+.nav-effect {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .35s ease;
+}
+
+    .nav-effect::before,
+    .nav-effect::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+    }
+
+    .nav-effect::before {
+        right: 0;
+        top: 0;
+        border-top: 3px solid #268de0;
+        border-right: 3px solid #165487;
+        transform: translate(-100%, 50%);
+    }
+
+    .nav-effect::after {
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #268de0;
+        border-left: 3px solid #165487;
+        transform: translate(100%, -50%);
+    }
+
+    .nav-effect:hover::before,
+    .nav-effect:hover::after {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+
+    .nav-effect:hover {
+        color: #268de0; /* Adaptez cette couleur pour qu'elle corresponde à votre palette de couleurs si nécessaire */
+        background-color: transparent; /* pour éviter tout conflit avec les styles de fond existants */
+    }
+
+/* Vous pouvez avoir besoin de réajuster certaines propriétés en fonction de la hauteur et de l'espacement de votre barre de navigation. */
+
+/* ... Votre CSS pour la barre de navigation existante continue */
+
