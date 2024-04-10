@@ -1,8 +1,8 @@
 # site_Valorium
 
-Bienvenue sur le projet de site du Valorium.
-Dans l'optique de m'entraîner et de découvrir le fonctionnement du framework .net blazor, ce projet a pour utilité de m'offrir un support pour expérimenter des notions.
+Bienvenue sur le projet du site du Valorium.
+Il s'agit d'une première version du site réalisée à l'aide du framework .NET Blazor. 
 
-A l'heure actuelle, il n'est pas garanti que le projet aboutisse à quelque chose de très concret. Maintenant, il n'est pas dit non plus qu'il n'arrive pas à son terme d'ici quelques mois.
+Le site est à retrouver ici [valorium-mc.fr](http://valorium-mc.fr).
 
-Bonne exploration du repo pour les curieux !
+Bonne visite ! 
