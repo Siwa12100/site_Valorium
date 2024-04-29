@@ -47,27 +47,9 @@
     color: #446;
 }
 
-/*.degrade1 {
-
-    background-image: url('https://cdn.discordapp.com/attachments/881878050298552361/1061068235929292920/2023-01-07_00.46.14.png?ex=66108d4d&is=65fe184d&hm=b4c59e7a13b4de3c9833e1a65c4e6c551df5a4d37ccc1534af95b1f1ed13f3f5&');
-    background-size: cover; 
-    background-position: center; 
-
-    display : flex;
-    flex-direction : row;
-    justify-content : space-around;
-    align-items : center;*/
-
-
-/*    margin-left: 5%;
-    margin-right: 5%;*/
-    /*width: 100%;
-    height: 50vh;
-    border-radius: 30px;
-}*/
 
 .degrade1 {
-    background-image: url('https://cdn.discordapp.com/attachments/881878050298552361/1061068235929292920/2023-01-07_00.46.14.png?ex=66108d4d&is=65fe184d&hm=b4c59e7a13b4de3c9833e1a65c4e6c551df5a4d37ccc1534af95b1f1ed13f3f5&');
+    background-image: url('/images/zaap.webp');
     background-size: cover;
     background-position: center;
     display: flex;
