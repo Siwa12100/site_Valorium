@@ -1,32 +1,20 @@
-﻿.gradient-background {
-
-    background: rgb(46,156,219);
-    background: linear-gradient(319deg, rgba(46,156,219,1) 13%, rgba(34,37,80,1) 90%);
-
+﻿.arriere-plan-degrade {
+    background: linear-gradient(319deg, rgba(46, 156, 219, 1) 13%, rgba(34, 37, 80, 1) 90%);
     color: white;
     border-radius: 20px;
-
-
-    padding-top : 2%;
-    padding-left : 3.5%;
-    padding-right : 3.5%;
-    padding-bottom : 2%;
-
-    margin-left : 4%;
-    margin-right : 4%;
+    padding: 2% 3.5%;
+    margin: 0 4%;
+    font-family: Candara;
 }
 
-    .gradient-background h2 {
-        color: white;
+.arriere-plan-degrade h2 {
+    color: white;
+    font-family: Candara;
+    font-size: 5vh;
+}
 
-        font-family: Candara;
-
-        font-size: 5vh;
-    }
-    .gradient-background p {
-        color: white; 
-        font-family : Candara;
-
-        font-size : 2.7vh;
-
-    }
+.arriere-plan-degrade p {
+    color: white;
+    font-family: Candara;
+    font-size: 2.7vh;
+}

@@ -1,4 +1,4 @@
-﻿.conteneur {
+﻿.bloc-conteneur {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,101 +6,44 @@
     color: white;
 }
 
-h2 {
+.bloc-texte, .bloc-media {
+    width: 50%;
+    padding: 0 2%;
+}
+
+.bloc-texte h2 {
     font-size: 6vh;
+    margin-bottom: 0.5em;
 }
 
-.section-texte, .section-media {
-    width: 50%;
-    padding: 0 2%;
+.bloc-texte p {
+    font-size: 2.7vh;
 }
 
-    .section-texte h2 {
-        margin-bottom: 0.5em;
-    }
-
-    .section-texte p {
-        font-size: 2.7vh;
-    }
-
-    .section-media iframe {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
-        border-radius: 40px;
-    }
-
-.section-media {
-    height: 45vh; /* Hauteur fixe pour le média */
+.bloc-media {
+    height: 45vh;
 }
 
-/* Ajout de la media query pour les écrans de moins de 1024 pixels */
+.bloc-media iframe {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
 @media (max-width: 1024px) {
-    .conteneur {
-        flex-direction: column; /* Change l'orientation pour empiler verticalement */
-        align-items: stretch; /* Étire les enfants pour qu'ils occupent toute la largeur */
+    .bloc-conteneur {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .section-texte, .section-media {
-        width: 100%; /* Les sections occupent toute la largeur disponible */
-        padding: 0 5%; /* Ajustement du padding pour un meilleur espacement */
+    .bloc-texte, .bloc-media {
+        width: 100%;
+        padding: 0 5%;
     }
 
-    .section-media {
-        height: auto; /* Ajuste la hauteur pour être dynamique et adaptée au contenu */
-        order: -1; /* Place la section média au-dessus du texte */
+    .bloc-media {
+        height: auto;
+        order: -1;
     }
 }
-
-
-
-
-/*.conteneur {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Candara;
-    color: white;*/
-
-/*    border : 3px solid red;*/
-/*}
-
-h2 {
-    font-size: 5vh;
-}
-
-.section-texte, .section-media {
-    width: 50%;
-    padding: 0 2%;
-}
-
-    .section-texte h2 {
-        margin-bottom: 0.5em;
-    }
-
-    .section-texte p {
-        font-size: 2.5vh;
-    }
-
-    .section-media iframe {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
-
-        width: 100%;*/ /* Cela peut varier en fonction de vos besoins */
-        /*height: 100%;
-
-
-        border-radius: 40px;*/
-
-        /*border : 3px orange solid;*/
-    /*}*/
-
-/* Ajustement pour l'ordre d'affichage */
-/*.section-media {*/
-
-    /*order: -1;*/ /* Place la section media en premier */
-
-    /*border : 3px solid green;*/
-
-    /*height : 45vh;
-}*/
