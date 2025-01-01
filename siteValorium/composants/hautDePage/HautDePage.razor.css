@@ -1,31 +1,15 @@
-﻿.marge-gauche {
-    flex: 0 0 1%; 
-}
-
-.bloc-principal {
+﻿.section-principale {
     position: relative;
     height: 70vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-}
-
-.bloc-interne h1 {
-    font-size: 17vh;
     font-family: Candara;
-    user-select: none;
 }
 
-.bloc-interne p {
-    font-family: Candara;
-    font-weight : bold;
-    font-size: 4.2vh;
-}
-
-.video-fond {
+.video-arriere-plan {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,75 +21,70 @@
     border-radius: 35px;
 }
 
-.contenu {
+.contenu-section {
     position: relative;
     z-index: 1;
     display: flex;
-    width: 100%; 
-
-    padding-left: 7%; 
-    border: none;
+    width: 100%;
+    padding-left: 7%;
 }
 
-.lueur-bleue {
+.espace-gauche {
+    flex: 0 0 1%;
+}
+
+.effet-lumiere {
     width: 87%;
-
 }
 
-.bloc-interne {
+.bloc-texte {
     text-align: left;
     width: 100%;
 }
 
-h1 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-a {
-
-    color : white;
-}
-
-.texte-large {
-    font-size: 1.7vw;
-    color: white;
+.bloc-texte h1 {
+    font-size: 20vh;
     font-family: Candara;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-    padding-bottom : 3vh;
-
+.texte-descriptif {
+    font-size: 2.1vw;
+    font-family: Candara;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 3vh;
     width: 100%;
 }
 
-.button {
-       
-        
+.bouton-style {
     width: max-content;
     padding: 10px 20px;
-    transition: 1s;
-    color: white;
-    font-weight: bold;
-    font-size: 3.3vh;
+    font-size: 3.6vh;
     font-family: Candara;
+    font-weight: bold;
+    color: white;
     position: relative;
     cursor: pointer;
-    will-change: transform;
     overflow: hidden;
+    transition: 1s;
 }
 
+a {
+    color : white;
+}
 
-.button::before,
-.button::after {
+.bouton-style::before,
+.bouton-style::after {
     content: '';
     position: absolute;
     background-color: white;
     transition: all 250ms ease-in-out;
-
 }
 
-.button::before {
+.bouton-style::before {
     top: 0;
     left: 50%;
     width: 100%;
@@ -113,7 +92,7 @@ a {
     transform: translateX(-50%);
 }
 
-.button::after {
+.bouton-style::after {
     top: 50%;
     left: 0;
     width: 2px;
@@ -121,17 +100,17 @@ a {
     transform: translateY(-50%);
 }
 
-.button:hover::before {
+.bouton-style:hover::before {
     left: -10px;
     width: calc(100% + 20px);
 }
 
-.button:hover::after {
+.bouton-style:hover::after {
     top: -10px;
-    height: calc(100% + 20px); 
+    height: calc(100% + 20px);
 }
 
-.button span:first-child::before {
+.bouton-style span:first-child::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -143,7 +122,7 @@ a {
     transition: all 250ms ease-in-out;
 }
 
-.button span:last-child::after {
+.bouton-style span:last-child::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -155,17 +134,32 @@ a {
     transition: all 250ms ease-in-out;
 }
 
-.button:hover span:first-child::before {
-    right: 0px;
+.bouton-style:hover span:first-child::before {
+    right: 0;
     transform: translateY(0%);
 }
 
-.button:hover span:last-child::after {
+.bouton-style:hover span:last-child::after {
+    bottom: 0;
     transform: translateY(0%);
-    bottom: 0px;
 }
 
 @media (max-width: 1024px) {
+    .section-principale {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
 
+    .bloc-texte h1 {
+        font-size: 10vh;
+    }
 
+    .texte-descriptif {
+        font-size: 3vw;
+    }
+
+    .bouton-style {
+        font-size: 2.5vh;
+    }
 }

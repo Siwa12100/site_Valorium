@@ -5,7 +5,7 @@
     background-color: #121212;
     height: 13vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    font-family: "Candara", sans-serif;
+    font-family: Candara;
     border-bottom: 1px solid #1e2031;
     padding: 0.8vh;
     width: 100%;
@@ -30,7 +30,7 @@
 
 .lien-navigation {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     position: relative;
@@ -80,7 +80,8 @@
     gap: 10px;
     font-weight: bold;
     padding: 10px 25px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: Candara;
     border: none;
     color: white;
     background: linear-gradient(273deg, rgba(111, 191, 237, 1) 16%, rgba(34, 37, 80, 1) 83%);
