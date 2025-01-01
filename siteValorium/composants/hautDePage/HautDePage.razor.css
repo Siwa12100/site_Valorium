@@ -14,7 +14,7 @@
 }
 
 .bloc-interne h1 {
-    font-size: 11vh;
+    font-size: 17vh;
     font-family: Candara;
     user-select: none;
 }
@@ -22,7 +22,7 @@
 .bloc-interne p {
     font-family: Candara;
     font-weight : bold;
-    font-size: 3vh;
+    font-size: 4.2vh;
 }
 
 .video-fond {
@@ -48,12 +48,13 @@
 }
 
 .lueur-bleue {
-    width: 60%;
+    width: 87%;
 
 }
 
 .bloc-interne {
     text-align: left;
+    width: 100%;
 }
 
 h1 {
@@ -74,6 +75,8 @@ a {
     font-family: Candara;
 
     padding-bottom : 3vh;
+
+    width: 100%;
 }
 
 .button {
@@ -84,7 +87,7 @@ a {
     transition: 1s;
     color: white;
     font-weight: bold;
-    font-size: 2.4vh;
+    font-size: 3.3vh;
     font-family: Candara;
     position: relative;
     cursor: pointer;

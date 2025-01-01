@@ -97,14 +97,20 @@
 
 .finDePage {
 
-    margin-top : 100px;
+    /* margin-top : 100px; */
     height : 20vh;
 }
 
 .BlocVideo1 {
-    margin-top: 7vh;
-    margin-bottom: 7vh;
+    margin-top: 10vh;
+    margin-bottom: 18vh;
 
+}
+
+.BlocVideo2 {
+    margin-top: 3vh;
+    margin-bottom: 18vh;
+    
 }
 
 .grandTitre h2 {
@@ -112,7 +118,7 @@
     margin-top : 8vh;
 
     font-family : Candara;
-    font-size : 5vh;
+    font-size : 6vh;
     color : white;
 
     margin-left : 2.7%;
@@ -123,6 +129,6 @@
 
     /*border :red solid 3px;*/
 
-    margin-top : 4vh;
-    margin-bottom : 7vh;
+    margin-top : 9vh;
+    margin-bottom : 13vh;
 }

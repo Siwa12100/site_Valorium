@@ -7,26 +7,26 @@
     border-radius: 20px;
 
 
-    padding-top : 0.1%;
-    padding-left : 3%;
-    padding-right : 3%;
-    padding-bottom : 1%;
+    padding-top : 2%;
+    padding-left : 3.5%;
+    padding-right : 3.5%;
+    padding-bottom : 2%;
 
-    margin-left : 7%;
-    margin-right : 7%;
+    margin-left : 4%;
+    margin-right : 4%;
 }
 
-    .gradient-background h1 {
+    .gradient-background h2 {
         color: white;
 
         font-family: Candara;
 
-        font-size: 3.5vh;
+        font-size: 5vh;
     }
     .gradient-background p {
         color: white; 
         font-family : Candara;
 
-        font-size : 2.5vh;
+        font-size : 2.7vh;
 
     }

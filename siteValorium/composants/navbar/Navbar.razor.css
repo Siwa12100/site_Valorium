@@ -3,10 +3,11 @@
     justify-content: space-around;
     align-items: center;
     background-color: #121212;
-    height: 9vh;
+    height: 13vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: Candara;
-    border-bottom: 0.1vh solid #1e2031; /* Correction: ajouté "solid" */
+    border-bottom: 0.1vh solid #1e2031;
+    padding: 0.8vh;
 }
 
 .logo {
@@ -29,7 +30,7 @@ img {
 
     .navigation a {
         color: white;
-        font-size: 126%;
+        font-size: 168%;
         text-decoration: none;
         font-family: Candara;
         font-weight: bold;
@@ -47,7 +48,7 @@ img {
     font-weight: bold;
     font-family: Candara;
     padding: 10px 25px;
-    font-size: 2.2vh;
+    font-size: 2.5vh;
     border: none;
     color: white;
     background: linear-gradient(273deg, rgba(111,191,237,1) 16%, rgba(34,37,80,1) 83%);

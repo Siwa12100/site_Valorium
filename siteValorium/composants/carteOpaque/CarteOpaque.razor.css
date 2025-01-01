@@ -1,6 +1,6 @@
 ﻿.card {
-    width: 26%;
-    height: 60%;
+    width: 30%;
+    height: 86%;
     padding: 1%;
     border-radius: 20px;
     background: rgba(255,255,255,0.2);
@@ -11,7 +11,7 @@
 }
 
     .card h3 {
-        font-size: 3vh;
+        font-size: 3.7vh;
         margin-top: 3%;
         margin-bottom: 6%;
         color: initial; /* Assurez-vous que la couleur par défaut est définie */
@@ -20,7 +20,7 @@
     .card p {
         margin-top: 1%;
         margin-bottom: 0%;
-        font-size: 2vh;
+        font-size: 2.7vh;
         color: initial; /* Assurez-vous que la couleur par défaut est définie */
     }
 
