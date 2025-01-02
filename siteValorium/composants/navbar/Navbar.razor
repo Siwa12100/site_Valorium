@@ -1,16 +1,35 @@
-﻿<nav class="barre-de-navigation">
+﻿<!-- Version Desktop -->
+<nav class="barre-de-navigation barre-desktop">
     <div class="bloc-logo">
-        <img src="/images/logoValorium.webp" alt="Logo" @onclick="redirectionAccueil">
+        <img src="/images/logoValorium.webp" alt="Logo" @onclick="RedirectionAccueil">
     </div>
-
     <div class="menu-navigation">
         <a class="lien-navigation effet-lien" href="#presentation">À propos</a>
         <a class="lien-navigation effet-lien" href="#actualites">Actualités</a>
         <a class="lien-navigation effet-lien" href="#emrub">Emrub</a>
     </div>
-
-    <button class="bouton-gradient" @ref="elementRef" @onclick="redirectionValorium">
+    <button class="bouton-gradient" @ref="elementRef" @onclick="RedirectionValorium">
         <img src="/images/discord-white-icon.png" alt="Logo Discord" class="icone-bouton">
         Discord
     </button>
+</nav>
+
+<!-- Version Mobile -->
+<nav class="barre-de-navigation barre-mobile">
+    <div class="bloc-logo">
+        <img src="/images/logoValorium.webp" alt="Logo" @onclick="RedirectionAccueil">
+    </div>
+    <button class="bouton-gradient" @ref="elementRef" @onclick="RedirectionValorium">
+        <img src="/images/discord-white-icon.png" alt="Logo Discord" class="icone-bouton">
+        Discord
+    </button>
+    <label for="menu-toggle" class="menu-burger">
+        ☰
+    </label>
+    <input type="checkbox" id="menu-toggle">
+    <div class="menu-navigation">
+        <a class="lien-navigation effet-lien" href="#presentation">À propos</a>
+        <a class="lien-navigation effet-lien" href="#actualites">Actualités</a>
+        <a class="lien-navigation effet-lien" href="#emrub">Emrub</a>
+    </div>
 </nav>

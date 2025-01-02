@@ -43,7 +43,7 @@
 }
 
 .bloc-texte h1 {
-    font-size: 20vh;
+    font-size: 6rem;
     font-family: Candara;
     color: white;
     font-weight: bold;
@@ -51,7 +51,7 @@
 }
 
 .texte-descriptif {
-    font-size: 2.1vw;
+    font-size: 1.8rem;
     font-family: Candara;
     color: white;
     font-weight: bold;
@@ -62,7 +62,7 @@
 .bouton-style {
     width: max-content;
     padding: 10px 20px;
-    font-size: 3.6vh;
+    font-size: 1.6rem;
     font-family: Candara;
     font-weight: bold;
     color: white;
