@@ -1,0 +1,150 @@
+/* ---- Styles Desktop ---- */
+.barre-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    height: 13vh;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    font-family: Candara;
+    border-bottom: 1px solid #1e2031;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.barre-desktop .bloc-logo img {
+    height: 10vh;
+    width: auto;
+    cursor: pointer;
+}
+
+.barre-desktop .menu-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
+
+.barre-desktop .lien-navigation {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.barre-desktop .lien-navigation:hover {
+    color: #268de0;
+}
+
+/* Bouton Discord Desktop */
+.barre-desktop .bouton-gradient {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    font-family: Candara;
+    border: none;
+    color: white;
+    background: linear-gradient(273deg, rgba(111, 191, 237, 1) 16%, rgba(34, 37, 80, 1) 83%);
+    border-radius: 45px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.barre-desktop .bouton-gradient:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.barre-desktop .icone-bouton {
+    height: 20px; /* Taille correcte pour l'icône */
+    width: auto;
+}
+
+/* ---- Styles Mobile ---- */
+.barre-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.barre-mobile .bloc-logo img {
+    height: 20vw;
+    width: auto;
+}
+
+.barre-mobile .bouton-gradient {
+    margin-top: 1rem;
+    width: 30%;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.4rem; /* Styles identiques au mode desktop */
+    padding: 10px 25px;
+    background: linear-gradient(273deg, rgba(111, 191, 237, 1) 16%, rgba(34, 37, 80, 1) 83%);
+    border-radius: 45px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.barre-mobile .bouton-gradient .icone-bouton {
+    height: 25px; /* Agrandi pour mobile */
+    width: auto;
+}
+
+.barre-mobile .menu-burger {
+    display: block;
+    font-size: 6rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.barre-mobile #menu-toggle {
+    display: none; /* Masque la checkbox */
+}
+
+.barre-mobile .menu-navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #121212;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.barre-mobile #menu-toggle:checked + .menu-navigation {
+    display: flex;
+}
+
+.barre-mobile .lien-navigation {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ---- Visibility Controls ---- */
+@media (max-width: 1024px) {
+    .barre-desktop {
+        display: none;
+    }
+    .barre-mobile {
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px) {
+    .barre-mobile {
+        display: none;
+    }
+}

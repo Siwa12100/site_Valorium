@@ -1,44 +1,77 @@
 ﻿/* ---- Styles Desktop ---- */
-.barre-desktop {
+.barre-de-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #121212;
     height: 13vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: Candara;
     border-bottom: 1px solid #1e2031;
-    padding: 0 2rem;
+    padding: 0.8vh;
     width: 100%;
 }
 
-.barre-desktop .bloc-logo img {
-    height: 10vh;
+.bloc-logo {
+    height: 100%;
+}
+
+.bloc-logo img {
+    height: 100%;
     width: auto;
     cursor: pointer;
 }
 
-.barre-desktop .menu-navigation {
+.menu-navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 4rem;
 }
 
-.barre-desktop .lien-navigation {
+.lien-navigation {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     position: relative;
 }
 
-.barre-desktop .lien-navigation:hover {
-    color: #268de0;
+/* Effet hover pour les liens */
+.effet-lien::before,
+.effet-lien::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
 }
 
-/* Bouton Discord Desktop */
-.barre-desktop .bouton-gradient {
+.effet-lien::before {
+    right: -5px;
+    top: -5px;
+    border-top: 3px solid #268de0;
+    border-right: 3px solid #165487;
+    transform: translate(-120%, 60%);
+}
+
+.effet-lien::after {
+    left: -5px;
+    bottom: -5px;
+    border-bottom: 3px solid #268de0;
+    border-left: 3px solid #165487;
+    transform: translate(120%, -60%);
+}
+
+.effet-lien:hover::before,
+.effet-lien:hover::after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+/* Bouton Discord Gradient */
+.bouton-gradient {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -52,97 +85,86 @@
     border-radius: 45px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+    position: relative;
+    z-index: 1;
     transition: all 0.5s;
 }
 
-.barre-desktop .bouton-gradient:hover {
+.bouton-gradient:hover {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
 }
 
-.barre-desktop .icone-bouton {
-    height: 20px; /* Taille correcte pour l'icône */
+.bouton-gradient::after {
+    content: '';
+    background: linear-gradient(90deg, rgba(111, 191, 237, 1) 16%, rgba(34, 37, 80, 1) 83%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.bouton-gradient:hover::after {
+    opacity: 1;
+}
+
+.icone-bouton {
+    height: 1em;
     width: auto;
 }
 
 /* ---- Styles Mobile ---- */
-.barre-mobile {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #121212;
-    padding: 1rem 0;
-    width: 100%;
-}
+@media (max-width: 1024px) {
+    .barre-de-navigation {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1rem 0;
+    }
 
-.barre-mobile .bloc-logo img {
-    height: 20vw;
-    width: auto;
-}
+    .bloc-logo img {
+        height: 50px;
+        width: auto;
+    }
 
-.barre-mobile .bouton-gradient {
-    margin-top: 1rem;
-    width: 30%;
-    justify-content: center;
-    gap: 10px;
-    font-size: 2.4rem; /* Styles identiques au mode desktop */
-    padding: 10px 25px;
-    background: linear-gradient(273deg, rgba(111, 191, 237, 1) 16%, rgba(34, 37, 80, 1) 83%);
-    border-radius: 45px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s;
-}
+    .menu-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
 
-.barre-mobile .bouton-gradient .icone-bouton {
-    height: 25px; /* Agrandi pour mobile */
-    width: auto;
-}
+    .lien-navigation {
+        font-size: 1rem;
+    }
 
-.barre-mobile .menu-burger {
-    display: block;
-    font-size: 6rem;
-    color: white;
-    cursor: pointer;
-    margin-top: 1rem;
-}
+    /* Mobile Styles for Bouton Discord */
+    .bouton-gradient {
+        width: 80%; /* Largeur ajustée */
+        justify-content: center;
+        gap: 10px;
+        font-size: 2.4rem;
+        padding: 10px 25px;
+    }
 
-.barre-mobile #menu-toggle {
-    display: none; /* Masque la checkbox */
-}
+    .bouton-gradient .icone-bouton {
+        height: 25px;
+    }
 
-.barre-mobile .menu-navigation {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #121212;
-    padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
+    /* Mobile-specific hover effects preserved */
+    .bouton-gradient:hover {
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+    }
 
-.barre-mobile #menu-toggle:checked + .menu-navigation {
-    display: flex;
-}
-
-.barre-mobile .lien-navigation {
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 2rem;
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .bouton-gradient:hover::after {
+        opacity: 1;
+    }
 }
 
 /* ---- Visibility Controls ---- */
-@media (max-width: 1024px) {
-    .barre-desktop {
-        display: none;
-    }
-    .barre-mobile {
-        display: flex;
-    }
-}
-
 @media (min-width: 1025px) {
     .barre-mobile {
         display: none;

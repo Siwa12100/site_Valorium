@@ -29,6 +29,7 @@
     margin-top: 3.7vh;
 }
 
+/* Desktop Styles */
 .bloc-gradient {
     background-image: url('/images/zaap.webp');
     background-size: cover;
@@ -42,31 +43,37 @@
     border-radius: 30px;
 }
 
+/* Style du titre H2 */
 .grand-titre h2 {
     margin-top: 8vh;
     font-family: Candara;
-    font-size: 6vh;
+    font-size: 2.4rem;
     color: white;
     margin-left: 2.7%;
 }
 
-.fin-de-page {
-    height: 20vh;
-}
 
+
+/* Responsive Styles for Mobile */
 @media (max-width: 1024px) {
     .bloc-gradient {
         flex-direction: column;
-        background-image: none;
+        justify-content: space-around;
         padding: 20px 0;
+
+        /* Applique le fond dégradé uniquement en mobile */
+        background-image: none;
+        background: linear-gradient(319deg, rgba(46, 156, 219, 1) 13%, rgba(34, 37, 80, 1) 90%);
     }
 
-    .bloc-gradient .bloc-video {
-        margin-bottom: 20px;
+    .bloc-gradient .CarteOpaque {
+        margin-bottom: 2rem; /* Sépare les cartes en hauteur */
+        width: 90%; /* Cartes centrées mais moins larges */
+        text-align: center; /* Texte centré pour les petites tailles d'écran */
     }
 
-    .bloc-gradient .bloc-video:last-child {
-        margin-bottom: 0;
+    .bloc-gradient .CarteOpaque:last-child {
+        margin-bottom: 0; /* Pas de marge pour la dernière carte */
     }
 
     .haut-de-page {
@@ -79,5 +86,12 @@
 
     .bloc-contenu {
         margin: 0 4%;
+    }
+
+    /* Ajustement du titre */
+    .bloc-gradient h2 {
+        font-size: 4.5vh;
+        margin-top: 4vh;
+        text-align: center;
     }
 }
