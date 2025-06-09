@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "siteValorium", "siteValorium\siteValorium.csproj", "{603812CB-19D3-40E9-8EF0-CDE580B9B7CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{8F41B89E-46EE-413A-9D4C-1AE2574027B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{603812CB-19D3-40E9-8EF0-CDE580B9B7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{603812CB-19D3-40E9-8EF0-CDE580B9B7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{603812CB-19D3-40E9-8EF0-CDE580B9B7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F41B89E-46EE-413A-9D4C-1AE2574027B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F41B89E-46EE-413A-9D4C-1AE2574027B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F41B89E-46EE-413A-9D4C-1AE2574027B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F41B89E-46EE-413A-9D4C-1AE2574027B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
